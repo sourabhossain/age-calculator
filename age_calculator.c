@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include <stdbool.h>
 
 int v(int i,int h)//use a function
 {
@@ -8,7 +9,7 @@ int v(int i,int h)//use a function
 
 int main()
 {
-    while(1) {
+    while(true) {
         int a, b, c, d, e, f, g, h, i, j, k, m, y, yes, month, day, hour, min, sec; //declaration of variables
 
         printf("enter current year:\n");
@@ -61,28 +62,31 @@ int main()
         //this statement will ask user to give input
         scanf("%d",&m);
 
-        if(m==1)//if user press (1)
+        if(m == 1)//if user press (1)
         {
-            month=v(i,h);
+            month = v(i, h);
             // total age in month
-            day=(i*12+h)*30+g; // total age in day
-            hour=((i*12+h)*30+g)*24; // total age in hour
-            min =((i*12+h)*30+g)*24*60;// total age in minute
-            sec=((i*12+h)*30+g)*24*60*60;// total age in second
-            printf("Your age in month : %d\n\n",month);//show total age in month
-            printf("Your age in day : %d\n\n",day);// show total age in dayprintf("Your age in hour : %d\n\n",hour);// show total age in hour
-            printf("Your age in minute: %d\n\n",min);//show total age in minute
-            printf("Your age in second: %d\n\n",sec);//show total age in second
+            day = (i * 12 + h) * 30 + g; // total age in day
+            hour= ((i * 12 + h) * 30 + g) * 24; // total age in hour
+            min = ((i * 12 + h) * 30 + g) * 24 * 60;// total age in minute
+            sec=((i * 12 + h) * 30 + g) * 24 * 60 * 60;// total age in second
+
+            printf("Your age in month : %d\n\n", month);//show total age in month
+            printf("Your age in day : %d\n\n", day);// show total age in dayprintf("Your age in hour : %d\n\n",hour);// show total age in hour
+            printf("Your age in minute: %d\n\n", min);//show total age in minute
+            printf("Your age in second: %d\n\n", sec);//show total age in second
         }
+
         printf("************************************************************\n\n");
         printf("Do you want to calculate another age? \n\n");
         printf("1. if yes press ( 1 )\n\n" ); //show instruction
         printf("2. if no press ( 0 )\n\n" );//show instruction
-        scanf("%d",&y);
-        if (y==0)
+        scanf("%d", &y);
+
+        if(y == 0)
         {
-        printf("\t Y O U A R E W E L C O M E \t\n\n");
-        return 0;
+            printf("\t Y O U A R E W E L C O M E \t\n\n");
+            return 0;
         }
     }
 }
