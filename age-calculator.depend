@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1607312232 source:/home/sourabhossain/Videos/age-calculator/age_calculator.c
+	<stdio.h>
+	<stdbool.h>
+

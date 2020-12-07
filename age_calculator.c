@@ -3,7 +3,7 @@
 
 int v(int i,int h)//use a function
 {
-    int t = i*12 + h;
+    int t = i * 12 + h;
     return t;// call the function
 }
 
@@ -12,22 +12,22 @@ int main()
     while(true) {
         int a, b, c, d, e, f, g, h, i, j, k, m, y, yes, month, day, hour, min, sec; //declaration of variables
 
-        printf("enter current year:\n");
+        printf("Enter current year:\n");
         scanf("%d", &a); // taking current year from user
 
-        printf("enter current month:\n");
+        printf("Enter current month:\n");
         scanf("%d", &b);// taking current month from user
 
-        printf("enter current day:\n\n");
+        printf("Enter current day:\n");
         scanf("%d", &c);// taking current day from user
 
-        printf("Now enter your born year:\n");
+        printf("\nNow enter your born year:\n");
         scanf("%d", &d);// taking born year from user
 
         printf("Now enter your born month:\n");
         scanf("%d", &e);// taking born month from user
 
-        printf("Now enter your born day:\n\n");
+        printf("Now enter your born day:\n");
         scanf("%d", &f);// taking born day from user
 
         {
@@ -48,11 +48,11 @@ int main()
         h = b - e; /* month*/
         i = a - d; /* year*/
 
-        printf("************************************************************\n\n");
-        printf("your age is :\t");
-        printf("day %d ",g);//show day
-        printf("month %d ",h);//show month
-        printf(" year %d \n\n",i);//show year
+        printf("\n************************************************************\n\n");
+        printf("Your age is :\t");
+        printf("Day %d ",g);//show day
+        printf("Month %d ",h);//show month
+        printf("Year %d \n\n",i);//show year
 
         printf("************************************************************\n\n");
         printf("Do you want to know anything else about your age ?\n\n");
@@ -85,7 +85,7 @@ int main()
 
         if(y == 0)
         {
-            printf("\t Y O U A R E W E L C O M E \t\n\n");
+            printf("\t\t Thanks Your! \n\n");
             return 0;
         }
     }
