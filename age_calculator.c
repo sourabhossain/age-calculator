@@ -69,7 +69,7 @@ int main()
             day = (i * 12 + h) * 30 + g; // total age in day
             hour= ((i * 12 + h) * 30 + g) * 24; // total age in hour
             min = ((i * 12 + h) * 30 + g) * 24 * 60;// total age in minute
-            sec=((i * 12 + h) * 30 + g) * 24 * 60 * 60;// total age in second
+            sec = ((i * 12 + h) * 30 + g) * 24 * 60 * 60;// total age in second
 
             printf("Your age in month : %d\n\n", month);//show total age in month
             printf("Your age in day : %d\n\n", day);// show total age in dayprintf("Your age in hour : %d\n\n",hour);// show total age in hour
